@@ -1,0 +1,40 @@
+POST http://localhost:8080/auth/login
+content-type: application/json
+
+{
+  "email": "johndoe@gmail.com",
+  "password": "qwe123qwe"
+}
+
+###
+
+POST http://localhost:8080/users/register
+content-type: application/json
+
+{
+  "name": "Eric Land",
+  "email": "erickasd@gmail.com",
+  "password": "qwe123qwe",
+  "address": {
+    "city": "New York",
+    "neighborhood": "Central Park",
+    "street": "red light avenue 2",
+    "number": 1099
+  }
+}
+
+###
+
+GET http://localhost:8080/users
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGdtYWlsLmNvbSIsImV4cCI6MTY5MzY4NTcwNiwiaWF0IjoxNjkzNjY3NzA2fQ.W-Z82_nXimDoX4R06eAqkmzt4BrnQM_8od5F1MzKDBFh2xqq8sLa4On3n5tg3LbuxH_07pLzkkvVa3Snd4Sa-g
+
+###
+
+GET http://localhost:8080/users/aa2005de-d7ef-430c-acc4-7a933617c23c
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqb2huZG9lQGdtYWlsLmNvbSIsImV4cCI6MTY5MzY4NTcwNiwiaWF0IjoxNjkzNjY3NzA2fQ.W-Z82_nXimDoX4R06eAqkmzt4BrnQM_8od5F1MzKDBFh2xqq8sLa4On3n5tg3LbuxH_07pLzkkvVa3Snd4Sa-g
+
+###
+
+GET http://localhost:8080/users
